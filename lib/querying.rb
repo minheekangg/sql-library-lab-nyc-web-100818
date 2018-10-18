@@ -24,10 +24,10 @@ end
 
 def select_name_and_series_subgenres_of_authors
   "WSELECT authors.name, subgenres.name
-FROM series 
-JOIN authors 
+FROM series
+JOIN authors
 ON  authors.id = series.author_id
-JOIN subgenres 
+JOIN subgenres
 ON subgenres.id = series.subgenre_id;"
 end
 
