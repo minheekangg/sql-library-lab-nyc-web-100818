@@ -23,7 +23,7 @@ ORDER BY count(characters.species) DESC limit 1;"
 end
 
 def select_name_and_series_subgenres_of_authors
-  "WSELECT authors.name, subgenres.name
+  "SELECT authors.name, subgenres.name
 FROM series
 JOIN authors
 ON  authors.id = series.author_id
